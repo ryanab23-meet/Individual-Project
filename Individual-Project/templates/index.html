@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title></title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body > 
+    {% if users %}
+      {% for user in users %}
+      Username : {{user.username}} <br>
+            password: {{user.password}} <br>
+      {% endfor %}
+    {% else %}
+      You still don't have an account, sign up !!
+    {% endif %}
+      <h1 id= "title" >E-</h1>
+            <br>
+            <h2 id="description"> E- Is Offering You An Amazing Chance or Getting To Know More People From Your Beutifull Group E!! </h2>
+        <a href="{{url_for('login')}}"><button style="color:black;width:20%;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);font-family: david; text-align:center " >Log In </button></a>
+        <br>
+        <br>
+        <a href="{{url_for('signup')}}"><button style="color:black;width:20%;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);font-family: david;text-align: center" >Sign Up </button></a>
+
+        <br>
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+  </body>
 </html>
