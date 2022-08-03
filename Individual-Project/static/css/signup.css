@@ -1,0 +1,10 @@
+body{
+	background: bisque;
+}
+
+h1{
+	color: brown;
+	size: 50px;
+	font-family: cursive;
+	text-align: center;
+}
