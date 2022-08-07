@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> Series 🎬</title>
+	       <link href="style.css" rel="stylesheet" type="text/css" />
+    </head> 
+      
+    <body style = "text-align:center;">
+           		<h1> Series 🎬 </h1>
+        <h2 id="about" > Hey.. here are some great recommendations of series for you to chill with ;) </h2>
+    <h2 id= "pick"> please pick your prefered: </h2>
+		
+		<a link href= "action.html" </a>
+		<p id="catagories"> -Action- </p>
+
+    <a link href= "comedy.html" </a>
+		<p id="catagories"> -Comedy- </p>
+
+    <a link href= "romance.html" </a>
+		<p id="catagories"> -Romance- </p>
+
+        <button onclick = "gfg_Run()"> 
+            Click here to change background color
+        </button>
+          
+        <p id = "GFG_DOWN" style =
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+            var str = "Click on button to change the background color";
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function gfg_Run() {
+                changeColor('grey');
+                el_down.innerHTML = "Background Color succesfully changed";
+            }         
+        </script> 
+    </body> 
+</html>    
+  </body>
+
+</html>
